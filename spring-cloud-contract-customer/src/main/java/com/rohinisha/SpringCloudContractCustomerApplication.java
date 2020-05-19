@@ -4,11 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringCloudContractProducerApplication {
+public class SpringCloudContractCustomerApplication {
 
-	//Test
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudContractProducerApplication.class, args);
+		SpringApplication.run(SpringCloudContractCustomerApplication.class, args);
 	}
 
 }
