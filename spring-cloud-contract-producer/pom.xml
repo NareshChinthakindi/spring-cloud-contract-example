@@ -22,6 +22,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
@@ -46,6 +50,12 @@
 			<artifactId>spring-cloud-starter-contract-verifier</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -68,7 +78,7 @@
 				<version>2.2.2.RELEASE</version>
 				<extensions>true</extensions>
 				<configuration>
-					<testFramework>JUNIT5</testFramework>
+					<baseClassForTests>com.rohinisha.BaseTestClass</baseClassForTests>
 				</configuration>
 			</plugin>
 			<plugin>
